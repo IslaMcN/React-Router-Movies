@@ -15,10 +15,10 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <div>
-      <Route exact path="/" render={props => <MovieList/>}></Route>
-      <Route path="/movies/:id" render={props => <Movie/>}></Route>
-      </div>
+      
+      <Route exact path="/" component={MovieList}></Route>
+      <Route path= "/movies/:id" component={Movie} ></Route>
+      
     </div>
   );
 };
